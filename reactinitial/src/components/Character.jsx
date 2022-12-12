@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Button } from "@mui/material";
 
 const Character = ({ person }) => {
   const [isShown, setIsShown] = useState(false);
@@ -6,9 +7,9 @@ const Character = ({ person }) => {
   return (
     <article>
       <p>{person.name}</p>
-      <button onClick={() => setIsShown(!isShown)}>
+      <Button variant="contained" onClick={() => setIsShown(!isShown)}>
         {isShown ? "Show less" : "Show more"}
-      </button>
+      </Button>
       {isShown && (
         <div className="details">
           <p>{person.details}</p>

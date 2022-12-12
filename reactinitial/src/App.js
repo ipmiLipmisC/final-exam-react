@@ -3,6 +3,7 @@ import LoadingMask from "./components/LoadingMask";
 import Character from "./components/Character";
 import Subscription from "./components/Subscription"
 
+
 const App = () => {
   const [persons, setPersons] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
